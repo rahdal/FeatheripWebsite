@@ -1,0 +1,341 @@
+
+/* General */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica",sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+
+nav{
+    border: none;
+    width: 100%;
+    height: 13.26vh;
+    background: #1C2833;
+    overflow: hidden;
+    top: 0vh;
+    text-align: right;
+
+}
+
+ ul{
+     display: inline-flex;
+     margin: 6.63vh;
+}
+
+ ul li{
+     list-style: none;
+     margin: 0vh 1.3vw;
+     color: #b2b1b1;
+     cursor: pointer;
+}
+
+.logo img{
+    width: 3%;
+    top: 6.63vh;
+    left: 8.46vw;
+    position: absolute;
+    cursor:default;
+
+}
+
+a{
+    color: #E6E5E5;
+    text-decoration: none;
+    text-align: right;
+    font-size: 1.105vw;
+    
+}
+
+/* Home */
+
+#home{
+    width: 100%;
+    height: 72.94vh;
+    background: #1C2833;
+}
+
+.banner{
+    width: 80%;
+    height: 53.05vh;
+    top: 30.53vh;
+    left: 8.46vw;
+    position: absolute;
+    color: #E6E5E5;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.banner h2{
+    font-size: 2.28vw;
+    font-weight: 500;
+    letter-spacing: 0.0625rem;
+
+}
+
+.banner h1{
+    font-size: 8.2vw;
+    letter-spacing: 0.0625rem;
+}
+
+.logopic{
+    width: 34%;
+    float: right;
+}
+
+.logopic img{
+    width: 100%;
+}
+
+/* About Us */
+
+#about{
+    width: 100%;
+    height: 53.05vh;
+    background: #E6E5E5;
+    overflow: auto;
+    
+}
+
+#about h1{
+    margin-left: 8.46vw;
+    margin-top: 9.95vh;
+    color: #1C2833;
+    font-size: 2.28vw;
+}
+
+#about p{
+    margin-left: 8.46vw;
+    margin-top: 2.65vh;
+    color: #1C2833;
+    width: 35%;
+    font-size: 1.3vw;
+    font-weight: 100;
+}
+
+.picture1{
+    width: 50%;
+    float: right;
+    overflow-y: hidden;
+}
+
+.picture1 img{
+    width: 60%;
+    overflow-y: hidden;
+    margin-top: 5.3vh;
+    padding-left: 8.46vw;
+}
+
+/* Services */
+
+#services{
+    width: 100%;
+    height: 53.05vh;
+    background: #1C2833; 
+    color: #E6E5E5;
+    overflow: auto;
+    text-align: left;
+    
+}
+
+#services h1{
+    margin-right: 8.46vw;
+    margin-top: 9.95vh;
+    color: #E6E5E5;
+    font-size: 2.28vw;
+    text-align: left;
+    margin-left: 55%;
+
+
+}
+
+
+#services p{
+    margin-right: 8.46vw;
+    margin-left: 55%;
+    margin-top: 2.65vh;
+    color: #E6E5E5;
+    font-size: 1.3vw;
+    font-weight: 100;
+    text-align: left;
+
+}
+
+.picture3{
+    width: 50%;
+    float: left;
+    overflow-y: hidden;
+}
+
+.picture3 img{
+    width: 58%;
+    overflow-y: hidden;
+    margin-top: 7.96vh;
+    padding-left: 11.39vw;
+}
+
+
+/* Contact Us */
+
+#contact{
+    width: 100%;
+    height: 49.73vh;
+    background: #E6E5E5;
+    overflow: auto;
+}
+
+#contact h1{
+    margin-left: 8.46vw;
+    margin-top: 9.95vh;
+    color: #1C2833;
+    font-size: 2.28vw;
+}
+
+#contact h2{
+    margin-left: 8.46vw;
+    margin-top: 2.65vh;
+    color: #1C2833;
+    width: 35%;
+    font-size: 1.5625vw;
+
+}
+
+#contact p{
+    margin-left: 8.46vw;
+    margin-top: 2.65vh;
+    color: #1C2833;
+    width: 35%;
+    font-size: 1.3vw;
+    font-weight: 100;
+}
+
+.picture2{
+    width: 50%;
+    float: right;
+    overflow-y: hidden;
+}
+
+.picture2 img{
+    width: 60%;
+    overflow-y: hidden;
+    margin-top: 7.96vh;
+    padding-left: 8.46vw;
+}
+
+/* Fade Animation */
+
+span{
+    opacity: 0;
+    transition: all 1.2s ease;
+    transform: translateY(6.63vh);
+    display: inline-block;
+}
+
+span.fade{
+    opacity: 1;
+    transform: translateY(0vh);
+
+}
+
+
+/*mobiles*/
+
+@media only screen and (max-width: 480px) {
+nav{
+        height: 8vh; 
+        box-shadow: none;
+        border: none;
+        border-bottom: 0;
+
+    }
+    
+a{
+    color: #E6E5E5;
+    text-decoration: none;
+    text-align: right;
+    font-size: 2vw;
+}
+    
+.banner{
+    top: 22.5vh;    
+    }
+    
+.logo img{
+    width: 7%;
+    top: 3vh;
+    }
+    
+ul{
+    margin: 3vh;
+    }
+    
+#home {
+    height: 36.47vh;
+  }
+
+#about{
+    height: 30.29vh;
+}
+
+#about h1{
+    font-size: 5vw;  
+    margin-top: 4vh;
+
+    }
+#about p{
+    font-size: 2.2vw; 
+    margin-top: 1vh;
+    }
+.picture1 img{
+    margin-top: 9.3vh;
+}
+
+#services{
+    height: 33.29vh;
+}
+
+#services h1{
+    font-size: 5vw;  
+    margin-top: 4vh;
+
+    }
+#services p{
+    font-size: 2.2vw; 
+    margin-top: 1vh;
+    }
+.picture3 img{
+    margin-top: 9.3vh;
+}
+
+#contact{
+    height: 22.87vh;
+}
+
+#contact h1{
+    font-size: 5vw;  
+    margin-top: 4vh;
+
+    }
+#contact h2{
+     font-size: 3vw;   
+        
+    }
+#contact p{
+    font-size: 2.2vw; 
+    margin-top: 1vh;
+    }
+.picture2 img{
+    margin-top: 6.3vh;
+}
+}
+
+
+
+
